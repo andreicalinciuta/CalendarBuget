@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rounded2"
+    >
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@android:color/white"
+        android:hint="Type Money"
+        android:id="@+id/eventname"
+        android:inputType="numberDecimal"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@mipmap/badph"
+            android:layout_margin="10dp"
+            android:id="@+id/usefully"/>
+
+        <TextView
+            android:id="@+id/whatyoubought"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:text="Neutral"
+            android:textColor="@android:color/black"
+            android:textSize="27sp"
+            android:layout_weight="3"
+
+            android:textStyle="bold" />
+        <!--It too must be changed in hmm whatwas-->
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@mipmap/goodph"
+            android:layout_margin="10dp"
+            android:id="@+id/unuseful"/>
+        <!--It must be changed in unuseful-->
+    </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:background="@android:color/white"
+        android:id="@+id/addevent"
+        />
+
+</LinearLayout>

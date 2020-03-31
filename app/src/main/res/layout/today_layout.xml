@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:paddingBottom="14dp">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="25dp"
+            android:paddingBottom="20dp"
+            android:layout_marginLeft="70dp"
+            android:orientation="vertical"
+
+            android:layout_weight="3"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="How much?"
+                android:gravity="center"
+                android:id="@+id/money_spent_today"
+                android:textColor="@android:color/background_dark"
+                android:textStyle="bold"
+                android:textSize="30dp"
+                android:layout_weight="3"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="3dp"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ai cheltuit"
+                android:gravity="center"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+        <!--But you have TO CHANGE IT!!!!!!!!!!!!!!! ( the id, it must be month_view-->
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/today_view"
+
+            android:background="@mipmap/calendarpic"
+            android:layout_margin="20dp"
+            android:layout_marginRight="0dp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="35dp"
+        android:paddingBottom="20dp"
+        android:orientation="horizontal">
+        <ImageButton
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="20dp"
+            android:background="@mipmap/badph"
+            android:layout_marginTop="45dp"
+            android:id="@+id/GOODSTUFF"/>
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="45dp"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="@android:color/background_dark"
+            android:text="Useful"
+            android:layout_marginLeft="10dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="45dp"
+            android:gravity="right"
+            android:textSize="20dp"
+            android:text="Spent"
+            android:id="@+id/money_spent_usefully"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/background_dark"
+            />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="25dp"
+        android:paddingBottom="20dp"
+        android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:textSize="20dp"
+        android:text=""
+        android:gravity="center"
+        />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="25dp"
+        android:paddingBottom="20dp"
+        android:orientation="horizontal">
+
+
+    <ImageButton
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="20dp"
+        android:background="@mipmap/goodph"
+        android:layout_marginTop="65dp"
+        android:id="@+id/BADSTUFF"/>
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="65dp"
+            android:textSize="20dp"
+            android:text="Unuseful"
+            android:textColor="@android:color/background_dark"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="65dp"
+            android:gravity="right"
+            android:textStyle="bold"
+            android:textColor="@android:color/background_dark"
+            android:textSize="20dp"
+            android:text="Spent"
+            android:id="@+id/money_spent_unuseful"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:baselineAligned="false"
+        android:gravity="right"
+       >
+
+
+        <ImageButton
+            android:id="@+id/ADDTODAYEVENT"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="30dp"
+            android:background="@mipmap/plus" />
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
